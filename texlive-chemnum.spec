@@ -1,3 +1,9 @@
+# revision 23814
+# category Package
+# catalog-ctan /macros/latex/contrib/chemnum
+# catalog-date 2011-09-04 11:56:55 +0200
+# catalog-license lppl1.3
+# catalog-version 0.3a
 Name:		texlive-chemnum
 Version:	0.3a
 Release:	1
@@ -46,6 +52,7 @@ l3packages bundle).
 %doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_doc_en.tex
 %doc %{_texmfdistdir}/doc/latex/chemnum/scheme-bla.eps
 %doc %{_texmfdistdir}/doc/latex/chemnum/scheme-tmp.eps
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,3 +63,5 @@ l3packages bundle).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
