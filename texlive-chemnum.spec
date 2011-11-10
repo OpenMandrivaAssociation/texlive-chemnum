@@ -1,11 +1,11 @@
-# revision 23814
+# revision 24547
 # category Package
 # catalog-ctan /macros/latex/contrib/chemnum
-# catalog-date 2011-09-04 11:56:55 +0200
+# catalog-date 2011-11-03 22:55:24 +0100
 # catalog-license lppl1.3
-# catalog-version 0.3a
+# catalog-version 0.3b
 Name:		texlive-chemnum
-Version:	0.3a
+Version:	0.3b
 Release:	1
 Summary:	A method of numbering chemical compounds
 Group:		Publishing
