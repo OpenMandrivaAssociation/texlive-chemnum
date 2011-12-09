@@ -1,11 +1,11 @@
-# revision 24547
+# revision 24724
 # category Package
 # catalog-ctan /macros/latex/contrib/chemnum
-# catalog-date 2011-11-03 22:55:24 +0100
+# catalog-date 2011-12-01 22:39:43 +0100
 # catalog-license lppl1.3
-# catalog-version 0.3b
+# catalog-version 0.3e
 Name:		texlive-chemnum
-Version:	0.3b
+Version:	0.3e
 Release:	1
 Summary:	A method of numbering chemical compounds
 Group:		Publishing
@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The package defines a \label- and \ref-like commands for
@@ -27,26 +25,26 @@ compound numbers. The package requires LaTeX 3 packages expl3
 l3packages bundle).
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/chemnum/chemnum.sty
 %doc %{_texmfdistdir}/doc/latex/chemnum/README
-%doc %{_texmfdistdir}/doc/latex/chemnum/bsp.tex
+%doc %{_texmfdistdir}/doc/latex/chemnum/chemnum-codehelper.tex
 %doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_doc_de.pdf
 %doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_doc_de.tex
 %doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_doc_en.pdf
