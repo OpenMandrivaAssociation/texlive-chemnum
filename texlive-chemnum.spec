@@ -24,16 +24,8 @@ compound numbers. The package requires LaTeX 3 packages expl3
 (from the l3experimental bundle) and xparse (from the
 l3packages bundle).
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -51,7 +43,6 @@ l3packages bundle).
 %doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_doc_en.tex
 %doc %{_texmfdistdir}/doc/latex/chemnum/scheme-bla.eps
 %doc %{_texmfdistdir}/doc/latex/chemnum/scheme-tmp.eps
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -62,5 +53,3 @@ l3packages bundle).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
