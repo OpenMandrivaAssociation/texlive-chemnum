@@ -1,12 +1,12 @@
-# revision 25522
+# revision 26195
 # category Package
 # catalog-ctan /macros/latex/contrib/chemnum
-# catalog-date 2012-02-26 17:51:11 +0100
+# catalog-date 2012-05-04 12:19:46 +0200
 # catalog-license lppl1.3
-# catalog-version 0.4a
+# catalog-version 0.5a
 Name:		texlive-chemnum
-Version:	0.4a
-Release:	2
+Version:	0.5a
+Release:	1
 Summary:	A method of numbering chemical compounds
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/chemnum
@@ -21,8 +21,8 @@ Requires(post):	texlive-kpathsea
 %description
 The package defines a \label- and \ref-like commands for
 compound numbers. The package requires LaTeX 3 packages expl3
-(from the l3experimental bundle) and xparse (from the
-l3packages bundle).
+(from the l3kernel bundle) and xparse (from the l3packages
+bundle).
 
 %post
     %{_sbindir}/texlive.post
@@ -36,13 +36,12 @@ l3packages bundle).
 %files
 %{_texmfdistdir}/tex/latex/chemnum/chemnum.sty
 %doc %{_texmfdistdir}/doc/latex/chemnum/README
-%doc %{_texmfdistdir}/doc/latex/chemnum/chemnum-codehelper.tex
-%doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_doc_de.pdf
-%doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_doc_de.tex
-%doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_doc_en.pdf
-%doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_doc_en.tex
-%doc %{_texmfdistdir}/doc/latex/chemnum/scheme-bla.eps
-%doc %{_texmfdistdir}/doc/latex/chemnum/scheme-tmp.eps
+%doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_de.pdf
+%doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_de.tex
+%doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_en.pdf
+%doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_en.tex
+%doc %{_texmfdistdir}/doc/latex/chemnum/scheme-bla.ps
+%doc %{_texmfdistdir}/doc/latex/chemnum/scheme-tmp.ps
 
 #-----------------------------------------------------------------------
 %prep
