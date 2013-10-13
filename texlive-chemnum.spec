@@ -1,11 +1,11 @@
-# revision 27728
+# revision 31025
 # category Package
 # catalog-ctan /macros/latex/contrib/chemnum
-# catalog-date 2012-09-18 07:38:29 +0200
+# catalog-date 2013-06-05 16:32:44 +0200
 # catalog-license lppl1.3
-# catalog-version 0.5e
+# catalog-version 0.6b
 Name:		texlive-chemnum
-Version:	0.5e
+Version:	0.6b
 Release:	1
 Summary:	A method of numbering chemical compounds
 Group:		Publishing
@@ -36,8 +36,6 @@ bundle).
 %files
 %{_texmfdistdir}/tex/latex/chemnum/chemnum.sty
 %doc %{_texmfdistdir}/doc/latex/chemnum/README
-%doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_de.pdf
-%doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_de.tex
 %doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_en.pdf
 %doc %{_texmfdistdir}/doc/latex/chemnum/chemnum_en.tex
 %doc %{_texmfdistdir}/doc/latex/chemnum/scheme-bla.ps
