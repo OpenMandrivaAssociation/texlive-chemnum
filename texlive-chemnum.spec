@@ -6,7 +6,7 @@
 # catalog-version 0.5e
 Name:		texlive-chemnum
 Version:	0.5e
-Release:	1
+Release:	2
 Summary:	A method of numbering chemical compounds
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/chemnum
