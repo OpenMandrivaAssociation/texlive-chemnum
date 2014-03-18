@@ -1,12 +1,12 @@
-# revision 31025
+# revision 33161
 # category Package
 # catalog-ctan /macros/latex/contrib/chemnum
-# catalog-date 2013-06-05 16:32:44 +0200
+# catalog-date 2014-03-12 17:25:07 +0100
 # catalog-license lppl1.3
-# catalog-version 0.6b
+# catalog-version 1.0
 Name:		texlive-chemnum
-Version:	0.6b
-Release:	5
+Version:	1.0
+Release:	1
 Summary:	A method of numbering chemical compounds
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/chemnum
