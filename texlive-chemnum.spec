@@ -1,18 +1,12 @@
-# revision 33161
-# category Package
-# catalog-ctan /macros/latex/contrib/chemnum
-# catalog-date 2014-03-12 17:25:07 +0100
-# catalog-license lppl1.3
-# catalog-version 1.0
 Name:		texlive-chemnum
-Version:	1.2
-Release:	2
+Version:	57490
+Release:	1
 Summary:	A method of numbering chemical compounds
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/chemnum
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chemnum.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chemnum.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chemnum.r57490.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chemnum.doc.r57490.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ compound numbers. The package requires LaTeX 3 packages expl3
 bundle).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,7 +37,7 @@ bundle).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
