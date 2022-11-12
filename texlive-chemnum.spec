@@ -5,8 +5,8 @@ Summary:	A method of numbering chemical compounds
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/chemnum
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chemnum.r57490.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chemnum.doc.r57490.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chemnum.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chemnum.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
