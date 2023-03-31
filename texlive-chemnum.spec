@@ -1,6 +1,6 @@
 Name:		texlive-chemnum
 Version:	57490
-Release:	1
+Release:	2
 Summary:	A method of numbering chemical compounds
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/chemnum
